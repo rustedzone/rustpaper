@@ -1,0 +1,13 @@
+/*HEADER*/
+
+.wrap{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 10;
+  width: 980px;
+  background: #eee;
+}
+
+
+/*Main Page*/
