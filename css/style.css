@@ -1,5 +1,14 @@
-/*LOADER*/
+/*MENU
 
+  S01. LOADER
+    S010. UNDER CONSTRUCTION
+  S02. HEADER
+  S03. MAIN PAGE
+
+  custom font : font-family: 'Titillium Web', sans-serif;
+*/
+
+/* S01. LOADER*/
 @keyframes spin{
   0%{
     transform:rotate(0deg)
@@ -9,7 +18,6 @@
   }
 }
 
-
 #loader-wrap{
   position: fixed;
   top:0;
@@ -17,12 +25,14 @@
   width: 100%;
   height: 100%;
   z-index: 1000;
-  background-color: black;
+  background-color: #0e0a01;
+
+  font-family: 'Lobster', cursive;
 }
 
-  #loader{
+#loader{
     display: block;
-    position: relative;
+    position: absolute;;
     left: 50%;
     top: 50%;
     width: 150px;
@@ -36,7 +46,6 @@
 
     animation: spin 1.5s linear infinite;
     -webkit-animation: spin 2s linear infinite;
-
   }
 
   #loader::before{
@@ -71,9 +80,69 @@
     -webkit-animation: spin 1.5s linear infinite;
   }
 
+  #loader-wrap .loader-section{
+    position: fixed;
+    top:0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+  }
 
+  #loader-wrap .loader-section.section-right{
+    right:0;
+  }
 
-/*HEADER*/
+  #loader-wrap .loader-section.section-left{
+    left:0;
+  }
+
+  .loaded #loader-wrap .loader-section.section-left{
+
+      transform:translateX(-100%);
+
+      transition: all 0.3s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+
+  }
+  .loaded #loader-wrap .loader-section.section-right{
+
+      transform:translateX(100%);
+
+      transition: all 0.3s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  }
+
+  .loaded #loader{
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  /*.loaded #loader-wrap .loader-section.section-left,
+  .loaded #loader-wrap .loader-section.section-right{
+      transition: all 0.3s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  }*/
+
+  .loaded #loader-wrap{
+    
+    visibility: hidden;
+
+    transform: translateY(-100%);
+
+    transition: all 0.3s 1s ease-out;
+  }
+      /* S010. UNDER CONSTRUCTION*/
+      #loader-wrap>p{
+        margin:20px 0 0 1em;
+        color: #f0cd17;
+        /*padding:1em;*/
+        font-size: 40px;
+      }
+
+      #loader-wrap>p::first-letter{
+        font-size:70px;
+      }
+
+      /**********S010**********/
+
+/* S02. HEADER*/
 
 .wrap{
   margin-left: auto;
@@ -85,4 +154,4 @@
 }
 
 
-/*Main Page*/
+/* S03. Main Page*/
