@@ -5,9 +5,13 @@
   S02. HEADER
   S03. MAIN PAGE
 
-  custom font = font-family: 'Roboto Mono', ;
+  custom font = font-family: 'Open Sans Condensed', sans-serif;
 */
 
+body{
+  background-images:url("../imgs/texture.png");
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 /* S01. LOADER*/
 @keyframes spin{
   0%{
@@ -142,31 +146,61 @@
 
       /**********S010**********/
 
+.wrap{
+    border: 1px solid #5bb5f6;
+    border-left: 10px solid #2d2d2e;
+    border-radius: 0 0 0 0px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 70%;
+    height:auto;
+
+}
 /* S02. HEADER*/
 
 header{
-  margin: 0 auto;
+
+  /*margin: 0 auto;
   height: 11%;
-  background-color: #95f997;
+  background-color: #eee;
   z-index: 10;
+
+  border: 1px;*/
 }
 
-.wrap{
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width: 980px;
+header h1{
+  display: inline;
+  color: #b6a508;
 }
 
 .header-title{
   letter-spacing: 2px;
-  position: absolute;
+  font-size: xx-large;
+  display: block;
+  /*position: absolute;*/
   /*bottom: 27px;*/
-  width: 90%;
+  /*width: 90%;*/
 }
 
 
 /* S03. Main Page*/
-  #home>p{
-    font-family: 'Roboto Mono';
+
+  #content{
+    border: 1px solid #e9c423;
+    margin-top, margin-bottom: 1px;
   }
+
+
+
+  /* Footer*/
+footer{
+  border:1px solid #c1f567;
+  margin-top: 1px;
+  padding: 1px;
+}
+
+    .footer-text{
+      text-align: right;
+    }
