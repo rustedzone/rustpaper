@@ -5,7 +5,7 @@
   S02. HEADER
   S03. MAIN PAGE
 
-  custom font : font-family: 'Titillium Web', sans-serif;
+  custom font = font-family: 'Roboto Mono', ;
 */
 
 /* S01. LOADER*/
@@ -121,12 +121,12 @@
   }*/
 
   .loaded #loader-wrap{
-    
+
     visibility: hidden;
 
     transform: translateY(-100%);
 
-    transition: all 0.3s 1s ease-out;
+    transition: transform 0.3s 1s ease-out;
   }
       /* S010. UNDER CONSTRUCTION*/
       #loader-wrap>p{
@@ -144,14 +144,29 @@
 
 /* S02. HEADER*/
 
+header{
+  margin: 0 auto;
+  height: 11%;
+  background-color: #95f997;
+  z-index: 10;
+}
+
 .wrap{
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  z-index: 10;
   width: 980px;
-  background: #eee;
+}
+
+.header-title{
+  letter-spacing: 2px;
+  position: absolute;
+  /*bottom: 27px;*/
+  width: 90%;
 }
 
 
 /* S03. Main Page*/
+  #home>p{
+    font-family: 'Roboto Mono';
+  }
