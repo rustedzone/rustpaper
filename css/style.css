@@ -119,11 +119,6 @@ body{
     transition: all 0.3s ease-out;
   }
 
-  /*.loaded #loader-wrap .loader-section.section-left,
-  .loaded #loader-wrap .loader-section.section-right{
-      transition: all 0.3s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  }*/
-
   .loaded #loader-wrap{
 
     visibility: hidden;
@@ -146,6 +141,7 @@ body{
 
       /**********S010**********/
 
+/***********Frame Position****************/
 .wrap{
     border: 1px solid #5bb5f6;
     border-left: 10px solid #2d2d2e;
@@ -156,26 +152,34 @@ body{
     position: relative;
     width: 70%;
     height:auto;
-
 }
+.my-picture{
+  width: 100px;
+  /*float: left;*/
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid #ec5ec0;
+  display:inline;
+}
+
+.mainContent{
+    width:80%;
+    border:10px solid #c30d0a;
+    display: inline;
+}
+
 /* S02. HEADER*/
 
 header{
-
-  /*margin: 0 auto;
-  height: 11%;
-  background-color: #eee;
-  z-index: 10;
-
-  border: 1px;*/
+    width: 80%
 }
 
 header h1{
   display: inline;
   color: #b6a508;
 }
-
 .header-title{
+  padding-left: 1em;
   letter-spacing: 2px;
   font-size: xx-large;
   display: block;
@@ -190,6 +194,7 @@ header h1{
   #content{
     border: 1px solid #e9c423;
     margin-top, margin-bottom: 1px;
+    padding:0.7em;
   }
 
 
