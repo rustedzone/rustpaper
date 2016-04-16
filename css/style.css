@@ -8,6 +8,22 @@
   custom font = font-family: 'Open Sans Condensed', sans-serif;
 */
 
+/*-----------------------------------------------------------------------------------*/
+/*	FLOATS
+/*-----------------------------------------------------------------------------------*/
+.fl{
+  float:left;
+}
+.fr{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+/*-----------------------------------------------------------------------------------*/
+/*
+/*-----------------------------------------------------------------------------------*/
+
 body{
   background:url("../imgs/texture.png");
   font-family: 'Open Sans Condensed', sans-serif;
@@ -243,6 +259,34 @@ header h1{
         transform: scale(1.3);
       }
 
+      /*-----------------------------------------------------------------------------------*/
+      /*	table personal-info
+      /*-----------------------------------------------------------------------------------*/
+      .personal-info{
+        border: 1px solid #24a4ac;
+        width: 100%;
+      }
+      .personal-info h3{
+        letter-spacing: 1.5px;
+        font-size: 15px;
+        padding-bottom: 7px;
+        margin-left: 1em
+      }
+      table{
+        border: 1px solid #0e2165;
+        background-color: #FFF;
+        width: 47%;
+        margin: 0 25px 5px 5px;
+      }
+      .tb-column{
+        background-color: #eddbf6;
+        color: #96859f;
+        width: 20%;
+      }
+      td{
+        padding:5px;
+      }
+
   /* Footer*/
 footer{
   border:1px solid #c1f567;
@@ -252,4 +296,13 @@ footer{
 
     .footer-text{
       text-align: right;
+    }
+
+    /* MEDIA */
+    @@media only screen and (max-width:650px) {
+        /*undisplay the profile picture*/
+        figure{
+          display: none;
+        }
+        /*                              */
     }
