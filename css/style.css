@@ -198,6 +198,17 @@ header p{
   display: inline;
   color: #b6a508;
 }
+
+header h1{
+  font-style: italic;
+}
+
+.separation{
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 1em;
+}
+
 .header-title{
   padding-left: 1em;
   letter-spacing: 2px;
@@ -226,6 +237,9 @@ nav{
 }
 nav .list-inline{
   padding: 0;
+}
+nav li a:hover{
+  font-weight: bolder;
 }
 
 /* S03. Main Page*/
