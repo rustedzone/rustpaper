@@ -182,7 +182,7 @@ body{
 
 .mainContent{
     float: left;
-    width:80%;
+    /*width:80%;*/
     border:10px solid #c30d0a;
     display: inline;
 }
@@ -199,7 +199,7 @@ header p{
   color: #b6a508;
 }
 
-header h1{
+header > h1{
   font-style: italic;
 }
 
@@ -207,6 +207,7 @@ header h1{
   font-weight: bolder;
   font-style: normal;
   font-size: 1em;
+  color: #9bb90a;
 }
 
 .header-title{
@@ -232,21 +233,30 @@ nav{
   border-bottom-right-radius: 20px;
   border-top: 1px solid #109fb8;
   border-bottom: 1px solid #109fb8;
-  width: 35%;
+  /*width: 35%;*/
   display: inline;
+
+
 }
 nav .list-inline{
   padding: 0;
 }
+
+nav li a{
+    transition: all 0.07s 0.03s ease-in-out;
+}
+
 nav li a:hover{
   font-weight: bolder;
+  font-size: 107%;
 }
 
 /* S03. Main Page*/
 
   #content{
     border: 1px solid #e9c423;
-    margin-top, margin-bottom: 1px;
+    margin-top:1px;
+    margin-bottom: 1px;
     padding:0.7em;
   }
       /*-----------------------------------------------------------------------------------*/
@@ -333,7 +343,7 @@ footer{
     }
 
     /* MEDIA */
-    @@media only screen and (max-width:650px) {
+    @media only screen and (max-width:650px) {
         /*undisplay the profile picture*/
         figure{
           display: none;
