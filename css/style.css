@@ -161,21 +161,21 @@ body{
 .wrap{
     border: 1px solid #5bb5f6;
     border-left: 10px solid #2d2d2e;
-    border-radius: 0 0 0 0px;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: auto;
-    margin-right: auto;
-    position: relative;
+    margin-right: 10%;
+    /*position: inherit;*/
     width: 70%;
     height:auto;
 }
 .my-picture{
-  width: 100px;
+  width: 13%;
   float: left;
   overflow: hidden;
   height:auto;
   border: 10px solid #61ec5e;
-  display:inline;
+  /*transform: rotate(-90deg);*/
+  /*display:inline;*/
 
   margin-left: 3%;
 }
@@ -278,7 +278,7 @@ nav .active{
       /*-----------------------------------------------------------------------------------*/
       .list-unstyled{
         list-style: none;
-        padding-left: none;
+        padding-left: 0;
       }
       .list-inline li{
         display: inline-block;
@@ -345,6 +345,13 @@ nav .active{
         padding:5px;
       }
 
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	RESUME SECTION
+  /*-----------------------------------------------------------------------------------*/
+      .employment,.education,.skills,.testimonials{
+        border:1px solid #1d9f51;
+      }
   /* Footer*/
 footer{
   border:1px solid #c1f567;
@@ -357,7 +364,7 @@ footer{
     }
 
     /* MEDIA */
-    @media only screen and (max-width:650px) {
+    @media only screen and (max-width:750px) {
         /*undisplay the profile picture*/
         figure{
           display: none;
