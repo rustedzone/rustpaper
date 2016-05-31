@@ -20,4 +20,16 @@
       $(".sec-content").not(tab).hide(2000);
       $(tab).show(1000);
     });
+    // ==============================================
+
+    //
+    //Resume section
+    //
+      $("dt a").click(function(){
+        event.preventDefault();
+
+        $(this).next().show(1000);
+        console.log($(this));
+      })
+
   });

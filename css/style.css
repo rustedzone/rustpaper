@@ -20,6 +20,10 @@
 .clear{
   clear: both;
 }
+
+.space10px{
+  margin-top:10px;
+}
 /*-----------------------------------------------------------------------------------*/
 /*
 /*-----------------------------------------------------------------------------------*/
@@ -248,12 +252,12 @@ nav li a{
 
 nav li a:hover{
   font-weight: bolder;
-  font-size: 15px;
+  /*font-size: 100%;*/
 }
 
 nav .active{
   font-weight: bolder;
-  font-size: 15px;
+  /*font-size: 15px;*/
   text-shadow: 1px 1px 2px #160504;
 }
 
@@ -350,8 +354,46 @@ nav .active{
   /*	RESUME SECTION
   /*-----------------------------------------------------------------------------------*/
       .employment,.education,.skills,.testimonials{
-        border:1px solid #1d9f51;
+        border:1px dashed #1d9f51;
+        margin:1px;
+        display:inline-block;
       }
+      .employment,.education{
+        width: 50%;
+        /*background-color: #d6ecf6;*/
+      }
+      .skills{
+        width: 45%;
+        height: auto;
+        margin-right: 3%;
+      }
+      .testimonials{
+        width: 100%;
+      }
+
+      .resume{
+        border: 1px solid #c45e50;
+        margin:0.8px;
+        background-color: #fafbf0;
+        margin-bottom: 10px;
+      }
+      .resume-title{
+        font-size: 100%;
+        display: inline;
+        font-weight: bolder;
+        /*text-shadow: 1px 1px 5px #160504;*/
+      }
+      .resume-title .fa{
+        padding:0 1px   0 3px;
+      }
+      .resume dd{
+        margin-left: 10px;
+      }
+      /*.res-hide{
+        display: none;
+      }*/
+
+
   /* Footer*/
 footer{
   border:1px solid #c1f567;
@@ -362,6 +404,7 @@ footer{
     .footer-text{
       text-align: right;
     }
+
 
     /* MEDIA */
     @media only screen and (max-width:750px) {
