@@ -170,7 +170,7 @@ body{
     margin-right: 10%;
     /*position: inherit;*/
     width: 70%;
-    height:auto;
+    /*height:auto;*/
 }
 .my-picture{
   width: 13%;
@@ -354,9 +354,11 @@ nav .active{
   /*	RESUME SECTION
   /*-----------------------------------------------------------------------------------*/
       .employment,.education,.skills,.testimonials{
-        border:1px dashed #1d9f51;
+        border:2px dashed #1d9f51;
         margin:1px;
         display:inline-block;
+        margin-bottom:5px;
+        border-radius:20px 20px 0 0;
       }
       .employment,.education{
         width: 50%;
@@ -373,6 +375,7 @@ nav .active{
 
       .resume{
         border: 1px solid #c45e50;
+        border-right: 5px solid #110d0d;
         margin:0.8px;
         background-color: #fafbf0;
         margin-bottom: 10px;
@@ -388,6 +391,29 @@ nav .active{
       }
       .resume dd{
         margin-left: 10px;
+      }
+      .skills > table{
+        width:90%;
+        margin-left:auto;
+        margin-right: auto;
+      }
+      .Twrapper{
+        border:1px solid #78f406;
+        margin:1px 0 1px 1px;
+      }
+      .Tcontainer{
+        margin:1px;
+        width: 49%;
+
+        border: 1px dashed #41906f;
+
+        display:inline-block;
+      }
+      progress{
+        width: 100%;
+        background-color: #eee;
+        /*border-radius: 2px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;*/
       }
       /*.res-hide{
         display: none;
