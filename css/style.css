@@ -420,6 +420,70 @@ nav .active{
       }*/
 
 
+        /*-----------------------------------------------------------------------------------*/
+        /*	PORTFOLIO SECTION
+        /*-----------------------------------------------------------------------------------*/
+.Pwrapper{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #248866;
+  height: 500px;
+  width: 97%;
+}
+
+.Pcontainer{
+  display:inline-block;
+  border: 1px dashed #ccbf06;
+  height: 25%;
+  width: 21%;
+  margin: 0.3em 0.3em 0.3em 1.2em;
+  position: relative;
+}
+
+.Ptitle{
+  margin-left: auto;
+  margin-right: auto;
+  color: #020f1b;
+  width: 100%;
+  font-stretch: expanded;
+}
+
+.Pcontent  img {
+  width: 100%;
+  height: 100%;
+  /*position:relative;*/
+}
+
+
+.Ptext{
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+}
+.Phover{
+  /*margin-top: 30%;*/
+  font-size: 2em;
+  display: none;
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Pcontainer:hover > .Phover , .Pcontainer:hover img {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background: #282a26;
+  opacity: 0.4;
+  color: #ebf5f6;
+}
+
+
+        /*-----------------------------------------------------------------------------------*/
+        /*	CONTACT SECTION
+        /*-----------------------------------------------------------------------------------*/
+
   /* Footer*/
 footer{
   border:1px solid #c1f567;
