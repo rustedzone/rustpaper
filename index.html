@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <title>Rust Paper</title>
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAbn5qCvh_NDntiOFJYjYuRquyCD_9S05s"></script>
+    <script>
+      function initMap() {
+        var myCenter= new google.maps.LatLng(-7.763583, 110.382611);
+
+        var properties  = {
+          center:myCenter,
+          zoom:5,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+        var map= new google.maps.Map(document.getElementById('Gmap'),properties);
+        var marker=new google.maps.Marker({
+          position:myCenter,
+          animation:google.maps.Animation.BOUNCE
+        });
+        marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window,'load', initMap);
+    </script>
+
   </head>
   <body>
     <!-- *****************LOADER***************** -->
@@ -129,21 +151,30 @@
                     </dt>
                     <dd class="res-hide" class="res-hide">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       </p>
+                      <h5> Responsibilites :</h5>
+                      <ul>
+                        <li>Manage any IT problem that occur.</li>
+                        <li>Giving advice to avoid IT problem in future.</li>
+                        <li>Manage company documents for procurement.</li>
+                      </ul>
+                      <h5>Achievement</h5>
+                      <ul>
+                        <li>Success bring the company to win procurement at least 8 times</li>
+                      </ul>
                     </dd>
-                  </dl>
+                  <!-- </dl>
 
                   <dl class="resume">
                     <dt class="resume-title">
                       <span class="fa fa-angle-double-right"></span>IT - PT. Panji Putra Perkasa (2010-2014)
-                    </dt>
+                      </dt>
                     <dd class="resume-hidden">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       </p>
                     </dd>
-                  </dl>
+                  </dl> -->
                 </div>
 
                 <div class="skills fr">
@@ -155,39 +186,15 @@
                       </tr>
                       <tr>
                         <td class="tb-column">CSS</td>
-                        <td> <progress value="60" max="100">50%</progress> </td>
+                        <td> <progress value="50" max="100">50%</progress> </td>
                       </tr>
                       <tr>
                         <td class="tb-column">JavaScript</td>
-                        <td> <progress value="40" max="100">50%</progress> </td>
+                        <td> <progress value="30" max="100">50%</progress> </td>
                       </tr>
                       <tr>
                         <td class="tb-column">PHP</td>
-                        <td> <progress value="80" max="100">50%</progress> </td>
-                      </tr>
-                      <tr>
-                        <td class="tb-column">CodeIgniter</td>
-                        <td> <progress value="40" max="100">50%</progress> </td>
-                      </tr>
-                      <tr>
-                        <td class="tb-column">CodeIgniter</td>
-                        <td> <progress value="40" max="100">50%</progress> </td>
-                      </tr>
-                      <tr>
-                        <td class="tb-column">CodeIgniter</td>
-                        <td> <progress value="40" max="100">50%</progress> </td>
-                      </tr>
-                      <tr>
-                        <td class="tb-column">CodeIgniter</td>
-                        <td> <progress value="40" max="100">50%</progress> </td>
-                      </tr>
-                      <tr>
-                        <td class="tb-column">CodeIgniter</td>
-                        <td> <progress value="40" max="100">50%</progress> </td>
-                      </tr>
-                      <tr>
-                        <td class="tb-column">CodeIgniter</td>
-                        <td> <progress value="40" max="100">50%</progress> </td>
+                        <td> <progress value="70" max="100">50%</progress> </td>
                       </tr>
                       <tr>
                         <td class="tb-column">CodeIgniter</td>
@@ -250,9 +257,6 @@
 
             <!-- BEGIN Portfolio SECTION -->
             <section id="sec-portfolio" class="sec-content">
-                <p>
-                  PORTFOLIO SECTION
-                </p>
                 <div class="Pwrapper">
                   <div class="Pcontainer">
                       <div class="Phover">
@@ -343,13 +347,39 @@
 
             <!-- BEGIN contact SECTION -->
             <section id="sec-contact" class="sec-content">
-                <p>
-                  CONTACT SECTION
-                </p>
                 <div class="Cinfo">
                     <p>
                       Contact Info
                     </p>
+                    <center>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d4069.0760577504025!2d110.38117400412843!3d-7.7646312277537115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-7.7635194!2d110.3825847!5e0!3m2!1sen!2sus!4v1470238430703" width="600" height="200" frameborder="0" style="border:1px solid #4b0a50;" allowfullscreen></iframe>
+                      <table style="width:56%;">
+                        <tr>
+                          <td class="tb-column">
+                            E - mail
+                          </td>
+                          <td>
+                            syaf.ruli.hsan@gmail.com
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tb-column">
+                            Phone
+                          </td>
+                          <td>
+                            +62 858 68 02 66 86
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tb-column">
+                            Website
+                          </td>
+                          <td>
+                            rustpaper.com
+                          </td>
+                        </tr>
+                      </table>
+                    </center>
                 </div>
                 <div class="Cme">
                   <p>
