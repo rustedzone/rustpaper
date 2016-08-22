@@ -31,5 +31,5 @@
         $(this).next().show(1000);
         console.log($(this));
       })
-
   });
+// TODO: Add javascript for modal box

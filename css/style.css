@@ -494,8 +494,6 @@ nav .active{
         /*	MODAL BOX
         /*-----------------------------------------------------------------------------------*/
 
-  /* FIXME: remove white space in the modals  */
-
 .modal{
   /*display: none; */
   position: fixed;
@@ -507,15 +505,14 @@ nav .active{
   height: 100%;
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgba(119,119,119,0.5); /* Black w/ opacity */
 
 }
 
 .modal-close{
   float: right;
-  color: #ebf5f6;
+  color: #050f11;
   font-weight: 500;
-  padding-right: 40px;
 
 }
 
@@ -527,24 +524,48 @@ nav .active{
   margin-right: auto;
   margin-left: auto;
   background: #ebf5f6;
-  width: 40%;
+  width: 48%;
+
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
 .modal-content-picture, .modal-content-information{
-  border: 1px solid rgb(128, 57, 80);
+  /*border: 1px solid rgb(128, 57, 80);*/
   /*display:inline-block;*/
   /*margin-left: auto;*/
   /*margin-right: auto;*/
   width: 49%;
-  height: 400px; /*experimental purpose */
+   /*height: 400px;experimental purpose */
 }
 
 .modal-content-picture{
   order: 1;
+  display: flex;
+
+}
+
+.modal-content-picture > img{
+    height: 90%;
+    width: 90%;
+    padding-bottom: 1em;
+
+    margin: auto;
 }
 
 .modal-content-information{
   order: 2;
+}
+
+.modal-description{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+
+  font-stretch: ultra-condensed;
+}
+
+.modal-detail > ul{
+  padding-left:10%;
+  list-style-type: circle;
 }
 
 
