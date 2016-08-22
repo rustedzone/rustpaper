@@ -494,8 +494,8 @@ nav .active{
         /*	MODAL BOX
         /*-----------------------------------------------------------------------------------*/
 
-.modal{
-  /*display: none; */
+.modals{
+  display: none; 
   position: fixed;
   z-index: 1;
   top: 0;
@@ -547,7 +547,7 @@ nav .active{
 .modal-content-picture > img{
     height: 90%;
     width: 90%;
-    padding-bottom: 1em;
+    /*padding-bottom: 1em;*/
 
     margin: auto;
 }

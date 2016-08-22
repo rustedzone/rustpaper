@@ -31,5 +31,20 @@
         $(this).next().show(1000);
         console.log($(this));
       })
+    // ==============================================
+    // modal box
+
+      $(".Pcontainer").click(function(){
+        event.preventDefault();
+        var _id = $(this).attr("id");
+        $("#"+_id+".modals").show();
+
+      })
+
+      // to close the modal box
+      $(".modal-close").click(function(){
+        $(".modals").hide();
+      })
+      // TODO: make js script for closing modal box via clicking outside the box
+
   });
-// TODO: Add javascript for modal box
