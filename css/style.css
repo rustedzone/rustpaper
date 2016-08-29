@@ -444,6 +444,7 @@ nav .active{
 
 .Pcontainer{
   display:inline-block;
+
   border: 1px dashed #ccbf06;
   height: 23%;
   width: 21%;
@@ -459,9 +460,17 @@ nav .active{
   font-stretch: expanded;
 }
 
-.Pcontent  img {
+.Pcontent{
   width: 100%;
   height: 100%;
+
+  overflow: hidden;
+  border: 1px solid #8cacf6;
+}
+
+.Pcontent  img {
+  width: 100%;
+  height: auto;
   /*position:relative;*/
 }
 
@@ -473,6 +482,7 @@ nav .active{
 }
 .Phover{
   /*margin-top: 30%;*/
+  width: 100%;
   font-size: 2em;
   display: none;
   position:absolute;
@@ -480,7 +490,7 @@ nav .active{
   margin-right: auto;
 }
 
-.Pcontainer:hover > .Phover , .Pcontainer:hover img {
+.Pcontainer:hover > .Phover{
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -495,7 +505,7 @@ nav .active{
         /*-----------------------------------------------------------------------------------*/
 
 .modals{
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -523,10 +533,13 @@ nav .active{
 
   margin-right: auto;
   margin-left: auto;
-  background: #ebf5f6;
+  background: #FFF;
   width: 48%;
 
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+
+  border-top: 10px solid #060606;
+  border-bottom: 10px solid #060606;
 }
 
 .modal-content-picture, .modal-content-information{
@@ -595,7 +608,12 @@ footer{
   margin-top: 1px;
   padding: 1px;
 }
-
+    footer a{
+      padding-right: 1em;
+    }
+    footer a:hover{
+      font-weight: bolder;
+    }
     .footer-text{
       text-align: right;
     }
