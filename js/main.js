@@ -1,3 +1,39 @@
+/*-
+ *
+ *
+ * style.css
+
+
+,--.                      ,--.
+,--,--,--. ,--,--.`--',--,--,               `--' ,---.
+|        |' ,-.  |,--.|      \              ,--.(  .-'
+|  |  |  |\ '-'  ||  ||  ||  |    .--.      |  |.-'  `)
+`--`--`--' `--`--'`--'`--''--'    '--'    .-'  /`----'
+'---'         
+
+ *
+ *
+ *
+ * Authors:  Muhammad Syaful Ihsan <syaf.ruli.hsan at gmail.com>
+ *********************
+ *
+ * Copyright (c) 2016 Muhammad Syafrul Ihsan
+ * All Rights Reserved.
+ *
+ *********************
+ * */
+
+/*MENU
+
+  S01. LOADER
+    S010. UNDER CONSTRUCTION
+  S02. HEADER
+  S03. MAIN PAGE
+
+  custom font = font-family: 'Open Sans Condensed', sans-serif;
+*/
+
+
 
   $(document).ready(function(){
 //
