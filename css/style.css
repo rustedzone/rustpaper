@@ -464,7 +464,7 @@ nav .active{
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #248866;
-  height: 500px;
+  height: auto;
   width: 97%;
 }
 
